@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{5B69A401-186B-DA3A-027A-7537686C200A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HrniecLogic.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DobrePrasiatko.cs">
     <Files>
-      <File FileName="Assets/Scripts/GreenPlanetLogic.cs" Line="8" Column="28" />
-      <File FileName="Assets/Scripts/BluePlanetLogic.cs" Line="28" Column="1" />
-      <File FileName="Assets/Scripts/HrniecLogic.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GreenPlanetLogic.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/BluePlanetLogic.cs" Line="10" Column="24" />
+      <File FileName="Assets/Scripts/HrniecLogic.cs" Line="16" Column="6" />
+      <File FileName="Assets/Scripts/DobrePrasiatko.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="47" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

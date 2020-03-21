@@ -47,6 +47,9 @@ TagManager:
   - name: Planety
     uniqueID: 650245339
     locked: 0
+  - name: Medzi
+    uniqueID: 4113898441
+    locked: 0
   - name: Na Planete
     uniqueID: 3264859427
     locked: 0
