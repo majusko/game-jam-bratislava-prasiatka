@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{5B69A401-186B-DA3A-027A-7537686C200A}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BluePlanetLogic.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GreenPlanetLogic.cs" Line="23" Column="38" />
+      <File FileName="Assets/Scripts/BluePlanetLogic.cs" Line="15" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GameJamPrasiatka" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="BluePlanetLogic.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6bb59dd7-4fbd-4354-a8a9-ec6a9ee6dff6" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
