@@ -1,19 +1,14 @@
 ﻿<Properties StartupConfiguration="{5B69A401-186B-DA3A-027A-7537686C200A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GreenPlanetLogic.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HrniecLogic.cs">
     <Files>
-      <File FileName="Assets/Scripts/GreenPlanetLogic.cs" Line="24" Column="43" />
-      <File FileName="Assets/Scripts/BluePlanetLogic.cs" Line="23" Column="12" />
+      <File FileName="Assets/Scripts/GreenPlanetLogic.cs" Line="8" Column="28" />
+      <File FileName="Assets/Scripts/BluePlanetLogic.cs" Line="28" Column="1" />
+      <File FileName="Assets/Scripts/HrniecLogic.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="GameJamPrasiatka" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="GreenPlanetLogic.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="GameJamPrasiatka" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
