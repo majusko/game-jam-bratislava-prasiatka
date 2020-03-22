@@ -5,19 +5,23 @@ using UnityEngine;
 public class DobrePrasiatko : MonoBehaviour
 {
 
+    public bool somPrasa;
     public float amplitude;
     public float speed;
     public float rotateSpeed;
     public float lifetime;
     public float timeSpentUp;
     public float speedOfSlideUpAndDown;
+    public GameObject levelManager;
 
+    private LevelManager levelManagerScript;
     private bool goDown = false;
     private bool imUp = false;
 
 
     void Start()
     {
+        levelManagerScript = levelManager.GetComponent<LevelManager>();
     }
 
     void Update()
@@ -43,9 +47,11 @@ public class DobrePrasiatko : MonoBehaviour
             {
                 imUp = true;
                 Invoke("GoDown", timeSpentUp);
-
             }
         }
+
+        if (Input.GetMouseButton(0))
+            Debug.Log("down");
 
         //trasenie - ---
         //transform.Rotate(0, 0, rotateSpeed * Time.deltaTime);
@@ -54,6 +60,22 @@ public class DobrePrasiatko : MonoBehaviour
         //transform.localRotation = Quaternion.Euler(0, 0, AngleAmount);
         //trasenie - ---
 
+    }
+
+    void OnMouseDown()
+    {
+
+        if(somPrasa)
+        {
+            levelManagerScript.KillPrasa();
+        } else
+        {
+            levelManagerScript.KillChobotnica();
+        }
+
+        //TODO particle
+
+        Destroy(gameObject);
     }
 
     private void GoDown()

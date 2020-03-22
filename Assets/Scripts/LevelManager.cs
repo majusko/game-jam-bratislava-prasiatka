@@ -22,12 +22,14 @@ public class LevelManager : MonoBehaviour
 
     private float nextActionTime = 0.0f;
     private Dictionary<string, float> closedHrnce = new Dictionary<string, float>();
-    private int currentScore;
+    private int currentScore = 0;
     private float levelWillEnd;
+    private int internalLives;
 
     void Start()
     {
         levelWillEnd = Time.time + timeForLevelInSec;
+        internalLives = lifes;
     }
 
     void Update()
@@ -40,29 +42,44 @@ public class LevelManager : MonoBehaviour
 
         var removals = new List<string>();
 
-        foreach (KeyValuePair<string, float> entry in closedHrnce) {
-            if(entry.Value < Time.time)
+        foreach (KeyValuePair<string, float> entry in closedHrnce)
+        {
+            if (entry.Value < Time.time)
             {
                 removals.Add(entry.Key);
             }
         }
 
-        foreach(string removal in removals)
+        foreach (string removal in removals)
         {
             closedHrnce.Remove(removal);
         }
 
 
-        if(lifes <= 0)
+        if (internalLives <= 0)
         {
             Debug.Log("ZEMRI");
             //TODO end screen
         }
 
-        if(Time.time > levelWillEnd)
+        if (Time.time > levelWillEnd)
         {
             Debug.Log("DALSI LEVEL");
             //TODO end level
+        }
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.transform.name == "MyObjectName")
+                { print("My object is clicked by mouse"); }
+            }
+
         }
     }
 
@@ -124,28 +141,36 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    private void KillPrasa()
+    public void KillPrasa()
     {
-        lifes--;
+        Debug.Log("killed prasa");
 
-        if(lifes == 2)
+        internalLives--;
+
+
+        Debug.Log(internalLives);
+        if (internalLives == 2)
         {
+            zivot1.SetActive(false);
             Destroy(zivot1);
         }
 
-        if (lifes == 1)
+        if (internalLives == 1)
         {
+            zivot2.SetActive(false);
             Destroy(zivot2);
         }
 
-        if(lifes == 0)
+        if(internalLives == 0)
         {
+            zivot3.SetActive(false);
             Destroy(zivot3);
         }
     }
 
-    private void KillChobotnica()
+    public void KillChobotnica()
     {
+        Debug.Log("killed chbot");
         currentScore += pointsZaChobotnica;
     }
 }
