@@ -4462,10 +4462,5 @@ PrefabInstance:
       propertyPath: zivot3
       value: 
       objectReference: {fileID: 1962073446}
-    - target: {fileID: 8294078149036964402, guid: 13643d8fb587949859bbca99bc11a062,
-        type: 3}
-      propertyPath: lifes
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13643d8fb587949859bbca99bc11a062, type: 3}
