@@ -1580,7 +1580,7 @@ GameObject:
   - component: {fileID: 724338780}
   - component: {fileID: 724338781}
   m_Layer: 0
-  m_Name: zivot3
+  m_Name: zivot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1598,7 +1598,7 @@ Transform:
   m_LocalScale: {x: 0.16907302, y: 0.24476004, z: 1}
   m_Children: []
   m_Father: {fileID: 1183281585}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &724338781
 SpriteRenderer:
@@ -2367,8 +2367,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 709848307}
-  - {fileID: 1962073447}
   - {fileID: 724338780}
+  - {fileID: 1962073447}
   m_Father: {fileID: 1895887328}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2938,9 +2938,12 @@ MonoBehaviour:
   spawnSomethingEvery: 0.8
   chanceForPig: 0.5
   waitTimeForNext: 2
-  pointsZaChobotnica: 0
-  lifes: 0
-  timeForLevelInSec: 0
+  pointsZaChobotnica: 5
+  lifes: 3
+  timeForLevelInSec: 90
+  zivot1: {fileID: 709848306}
+  zivot2: {fileID: 724338779}
+  zivot3: {fileID: 1962073446}
 --- !u!1 &1654032240
 GameObject:
   m_ObjectHideFlags: 0
@@ -3808,7 +3811,7 @@ GameObject:
   - component: {fileID: 1962073447}
   - component: {fileID: 1962073448}
   m_Layer: 0
-  m_Name: zivot2
+  m_Name: zivot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3826,7 +3829,7 @@ Transform:
   m_LocalScale: {x: 0.16907302, y: 0.24476004, z: 1}
   m_Children: []
   m_Father: {fileID: 1183281585}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1962073448
 SpriteRenderer:

@@ -16,7 +16,10 @@ public class LevelManager : MonoBehaviour
     public int lifes;
     public float timeForLevelInSec;
 
-    private List<GameObject> currentlySpawned;
+    public GameObject zivot1;
+    public GameObject zivot2;
+    public GameObject zivot3;
+
     private float nextActionTime = 0.0f;
     private Dictionary<string, float> closedHrnce = new Dictionary<string, float>();
     private int currentScore;
@@ -52,11 +55,13 @@ public class LevelManager : MonoBehaviour
 
         if(lifes <= 0)
         {
+            Debug.Log("ZEMRI");
             //TODO end screen
         }
 
         if(Time.time > levelWillEnd)
         {
+            Debug.Log("DALSI LEVEL");
             //TODO end level
         }
     }
@@ -122,6 +127,21 @@ public class LevelManager : MonoBehaviour
     private void KillPrasa()
     {
         lifes--;
+
+        if(lifes == 2)
+        {
+            Destroy(zivot1);
+        }
+
+        if (lifes == 1)
+        {
+            Destroy(zivot2);
+        }
+
+        if(lifes == 0)
+        {
+            Destroy(zivot3);
+        }
     }
 
     private void KillChobotnica()
