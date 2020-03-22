@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/SampleScene.unity
+=======
+- path: Assets/Scenes/FailScene.unity
+>>>>>>> 615cc2ac444aa10b4e16888d9d5d1d71ac5feb64
   isLoaded: 1
   isActive: 1

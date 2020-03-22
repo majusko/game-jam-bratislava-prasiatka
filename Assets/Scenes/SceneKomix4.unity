@@ -423,7 +423,7 @@ SpriteRenderer:
   m_SortingLayerID: -562507667
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 35a2ef50b86e94d298b05424d96e687e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 02b640e45e4754e8281d4757c3efb87c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -503,7 +503,7 @@ SpriteRenderer:
   m_SortingLayerID: -562507667
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 35a2ef50b86e94d298b05424d96e687e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 196e87eb5e5f98f47ac52c95540d8931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -613,7 +613,7 @@ SpriteRenderer:
   m_SortingLayerID: -562507667
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 35a2ef50b86e94d298b05424d96e687e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c0975b7548384ce98e2c54b89fe9153, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1351,7 +1351,7 @@ SpriteRenderer:
   m_SortingLayerID: -562507667
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 35a2ef50b86e94d298b05424d96e687e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c0975b7548384ce98e2c54b89fe9153, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1489,12 +1489,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadPrevousScene
       objectReference: {fileID: 0}
-    - target: {fileID: 7307897029756413636, guid: 5b2f21351b9ded6428e4c88024ec4475,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a46b80806029545b09f22e911b8ed3bc,
-        type: 3}
     - target: {fileID: 7307897029549379038, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1505,6 +1499,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 7307897029756413636, guid: 5b2f21351b9ded6428e4c88024ec4475,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a46b80806029545b09f22e911b8ed3bc,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2f21351b9ded6428e4c88024ec4475, type: 3}
 --- !u!224 &2012177310 stripped
