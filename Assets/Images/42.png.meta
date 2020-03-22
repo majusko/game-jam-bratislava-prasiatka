@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e93b4770fa880415b80927b3c25bab66
+=======
+guid: 6af42f7976b3b7d4392afb87d8600c4c
+>>>>>>> origin/pjko-branch
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -75,7 +79,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: c8b105aa8d5dd49098e91c02d3547e93
+=======
+    spriteID: ca7f29aa794b521499d2f6538bea7ba7
+>>>>>>> origin/pjko-branch
     vertices: []
     indices: 
     edges: []

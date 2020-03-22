@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1680
     height: 1000
-  m_MinSize: {x: 681, y: 498}
+  m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 5302
+  controlID: 16803
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,10 +126,10 @@ MonoBehaviour:
     y: 0
     width: 1271
     height: 1000
-  m_MinSize: {x: 404, y: 498}
+  m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 5303
+  controlID: 16804
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,10 +151,10 @@ MonoBehaviour:
     y: 0
     width: 1271
     height: 606
-  m_MinSize: {x: 404, y: 224}
-  m_MaxSize: {x: 8004, y: 4024}
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 5304
+  controlID: 16805
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,8 +174,8 @@ MonoBehaviour:
     y: 0
     width: 202
     height: 606
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -212,7 +212,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d6fbffff60290000ac290000b2290000d0290000d4290000f62900002c2a00003c2a0000422a0000562a0000
+      m_ExpandedIDs: d414ffff7c15ffff463fffffec3fffff0040fffffe40ffff9c41ffffaa41ffffb841ffffda41fffff841ffff1642ffff3642ffff6442ffff8242ffffa042ffffb242ffffe042fffffe42ffff1c43ffff3a43ffff5843ffff7643ffffa443ffffb243ffffc043ffffe643fffff443ffff0244ffff3044ffff4e44ffff6c44ffff2a45ffff5045ffff0a46ffff2846ffff4846ffff0047ffff3847ffff5647ffff7447ffffa247ffffc047ffffde47fffffc47ffff4849ffff064affffa64affff5e4bffff044cffffc24cffffea4cffff724dffff944dffffb44dffffe64dffff064effff264effff4a4effff644effff124fffff4a50ffff0851ffffa651ffff5852ffffe852ffff1853ffff5253ffff7053ffff8e53ffffac53ffffda53ffffe853ffff1654ffff2a54ffffd6fbffff60290000ac290000b2290000d0290000d4290000f62900002c2a00003c2a0000422a0000562a000078c50000dec5000056d800007ed80000acf00000bef00000d8f00000e4f00000eaf0000028f100003ef1000042f1000048f1000058f10000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -297,9 +297,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.2721781, y: 0.1688822, z: 0.25926954}
+    m_Target: {x: 0.31193677, y: -2.0217295, z: 0.03700647}
     speed: 2
-    m_Value: {x: 0.2721781, y: 0.1688822, z: 0.25926954}
+    m_Value: {x: 0.31193677, y: -2.0217295, z: 0.03700647}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -331,9 +331,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 11.885054
+    m_Target: 22
     speed: 2
-    m_Value: 11.885054
+    m_Value: 22
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -479,19 +479,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Images
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Images
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/mkapusta/gamejam/space/GameJamPrasiatka
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e260000
-    m_LastClickedID: 9854
+    m_SelectedIDs: 24290000
+    m_LastClickedID: 10532
     m_ExpandedIDs: 000000000626000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -545,9 +545,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 98bd0000
+    m_LastClickedInstanceID: 48536
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -572,7 +572,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 100.001526}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 115
 --- !u!114 &13

@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 1680
     height: 1050
+=======
+    x: 8
+    y: 51
+    width: 1904
+    height: 981
+>>>>>>> origin/pjko-branch
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
@@ -43,8 +50,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1680
     height: 1050
+=======
+    width: 1904
+    height: 981
+>>>>>>> origin/pjko-branch
   m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
@@ -64,7 +76,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1680
+    width: 1904
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -85,8 +97,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 1030
     width: 1680
+=======
+    y: 961
+    width: 1904
+>>>>>>> origin/pjko-branch
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -109,12 +126,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1680
     height: 1000
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
   controlID: 20025
+=======
+    width: 1904
+    height: 931
+  m_MinSize: {x: 887, y: 498}
+  m_MaxSize: {x: 16012, y: 14048}
+  vertical: 0
+  controlID: 865
+>>>>>>> origin/pjko-branch
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,12 +160,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1339
     height: 1000
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
   controlID: 20026
+=======
+    width: 1481
+    height: 931
+  m_MinSize: {x: 610, y: 498}
+  m_MaxSize: {x: 12010, y: 14048}
+  vertical: 1
+  controlID: 1040
+>>>>>>> origin/pjko-branch
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,12 +194,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1339
     height: 605
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
   controlID: 20027
+=======
+    width: 1481
+    height: 643
+  m_MinSize: {x: 610, y: 224}
+  m_MaxSize: {x: 12010, y: 4024}
+  vertical: 0
+  controlID: 1041
+>>>>>>> origin/pjko-branch
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,7 +227,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 202
+<<<<<<< HEAD
     height: 605
+=======
+    height: 643
+>>>>>>> origin/pjko-branch
   m_MinSize: {x: 202, y: 224}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 13}
@@ -208,8 +256,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 202
     y: 0
+<<<<<<< HEAD
     width: 1137
     height: 605
+=======
+    width: 584
+    height: 643
+>>>>>>> origin/pjko-branch
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 14}
@@ -219,7 +272,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 16}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,6 +281,35 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 786
+    y: 0
+    width: 695
+    height: 643
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> origin/pjko-branch
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -236,9 +318,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 605
     width: 1339
     height: 395
+=======
+    y: 643
+    width: 1481
+    height: 288
+>>>>>>> origin/pjko-branch
   m_MinSize: {x: 232, y: 274}
   m_MaxSize: {x: 10002, y: 10024}
   m_ActualView: {fileID: 17}
@@ -262,10 +350,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1339
     y: 0
     width: 341
     height: 1000
+=======
+    x: 1481
+    y: 0
+    width: 423
+    height: 931
+>>>>>>> origin/pjko-branch
   m_MinSize: {x: 277, y: 74}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 19}
@@ -294,25 +389,43 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 202
     y: 30
     width: 1133
     height: 585
+=======
+    x: 794
+    y: 81
+    width: 691
+    height: 623
+>>>>>>> origin/pjko-branch
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
+<<<<<<< HEAD
   m_SelectedSizes: 0000000000000000000000000c000000000000000000000000000000000000000000000000000000
+=======
+  m_SelectedSizes: 0800000000000000000000000c000000000000000000000000000000000000000000000000000000
+>>>>>>> origin/pjko-branch
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -740
     m_HBaseRangeMax: 740
     m_VBaseRangeMin: -360
     m_VBaseRangeMax: 360
+=======
+    m_HBaseRangeMin: -1480
+    m_HBaseRangeMax: 1480
+    m_VBaseRangeMin: -720
+    m_VBaseRangeMax: 720
+>>>>>>> origin/pjko-branch
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -330,16 +443,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 1133
       height: 568
     m_Scale: {x: 0.76554054, y: 0.76554054}
     m_Translation: {x: 566.5, y: 284}
+=======
+      width: 691
+      height: 606
+    m_Scale: {x: 0.23344594, y: 0.23344594}
+    m_Translation: {x: 345.5, y: 303}
+>>>>>>> origin/pjko-branch
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -740
       y: -370.9797
       width: 1480
@@ -352,6 +473,20 @@ MonoBehaviour:
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
+=======
+      x: -1480
+      y: -1297.9451
+      width: 2960
+      height: 2595.8901
+    m_MinimalGUI: 1
+  m_defaultScale: 0.23344594
+  m_TargetTexture: {fileID: 0}
+  m_CurrentColorSpace: 0
+  m_LastWindowPixelSize: {x: 691, y: 623}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000001000000000000
+>>>>>>> origin/pjko-branch
   m_XRRenderMode: 0
 --- !u!114 &13
 MonoBehaviour:
@@ -374,17 +509,30 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 30
     width: 200
     height: 585
+=======
+    x: 8
+    y: 81
+    width: 200
+    height: 623
+>>>>>>> origin/pjko-branch
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: a655ffff
       m_LastClickedID: -43610
       m_ExpandedIDs: d463ffff4a79ffff2c89ffffc88bffffb28fffffd6ccffffe4ccfffff2ccffff00cdffff0ecdffff1ecdffff26cdffff4ccdffff5acdffff94ceffffa2ceffffb0ceffffbeceffffccceffffdaceffffe8ceffff98cfffffa6cffffffacfffffd0d3ffff38fbffffec280000f0280000fe37000002380000443a0000483a0000183c00001c3c0000b03d0000b83d0000bc3d0000c23d0000
+=======
+      m_SelectedIDs: b4280000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 1cfaffffccfaffff6afbffffd6fbffff8e290000162a0000
+>>>>>>> origin/pjko-branch
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -429,10 +577,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 202
     y: 30
     width: 1133
     height: 585
+=======
+    x: 210
+    y: 81
+    width: 580
+    height: 623
+>>>>>>> origin/pjko-branch
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 68b8c54ecd3bd470e99755907bf40ec3
   m_SceneLighting: 1
@@ -440,9 +595,15 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 3.5212007, y: 0.17974056, z: 1.067031}
     speed: 2
     m_Value: {x: 3.5212007, y: 0.17974056, z: 1.067031}
+=======
+    m_Target: {x: -0.039108943, y: 0.349848, z: -0.019642286}
+    speed: 2
+    m_Value: {x: -0.039108943, y: 0.349848, z: -0.019642286}
+>>>>>>> origin/pjko-branch
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -474,9 +635,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 15.046708
     speed: 2
     m_Value: 15.046708
+=======
+    m_Target: 15.875924
+    speed: 2
+    m_Value: 15.875924
+>>>>>>> origin/pjko-branch
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -536,6 +703,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 202
+<<<<<<< HEAD
     y: 30
     width: 1133
     height: 585
@@ -546,6 +714,39 @@ MonoBehaviour:
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 0}
   m_BreadCrumbs: []
+=======
+    y: 73
+    width: 676
+    height: 634
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: 1107701177780991688, guid: dbaec10f654418444a5f823163ad7165, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: dbaec10f654418444a5f823163ad7165,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1107701177780991688, guid: dbaec10f654418444a5f823163ad7165,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+>>>>>>> origin/pjko-branch
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -578,10 +779,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 635
     width: 1337
     height: 375
+=======
+    x: 8
+    y: 724
+    width: 1479
+    height: 268
+>>>>>>> origin/pjko-branch
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -606,9 +814,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 5c260000
     m_LastClickedID: 9820
     m_ExpandedIDs: 000000000426000000ca9a3b
+=======
+    m_SelectedIDs: 56290000
+    m_LastClickedID: 10582
+    m_ExpandedIDs: 000000002c26000000ca9a3b
+>>>>>>> origin/pjko-branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -636,7 +850,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000000426000000ca9a3b
+=======
+    m_ExpandedIDs: 000000002c26000000ca9a3b
+>>>>>>> origin/pjko-branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -738,10 +956,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1339
     y: 30
     width: 339
     height: 980
+=======
+    x: 1489
+    y: 81
+    width: 421
+    height: 911
+>>>>>>> origin/pjko-branch
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
