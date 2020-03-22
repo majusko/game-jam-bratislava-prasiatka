@@ -2570,10 +2570,10 @@ MonoBehaviour:
   spawnSomethingEvery: 0.8
   chanceForPig: 0.5
   waitTimeForNext: 2
-  pointsZaChobotnica: 20
+  pointsZaChobotnica: 1
   pointsCoTreba: 20
   lifes: 3
-  timeForLevelInSec: 10
+  timeForLevelInSec: 90
   score: {fileID: 747387473}
   timer: {fileID: 756687738}
   failScene: FailScene
