@@ -785,12 +785,12 @@ PrefabInstance:
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1251.7
+      value: 1161
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -620.8
+      value: -584
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
@@ -832,11 +832,36 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830612, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1618317697}
+    - target: {fileID: 2674785156932676703, guid: a87ca76537cf76d48bc387b7974558eb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -83
+      objectReference: {fileID: 0}
+    - target: {fileID: 2674785156932676703, guid: a87ca76537cf76d48bc387b7974558eb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2674785156932676702, guid: a87ca76537cf76d48bc387b7974558eb,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 34
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a87ca76537cf76d48bc387b7974558eb, type: 3}
 --- !u!1001 &7307897031047800815
@@ -909,12 +934,12 @@ PrefabInstance:
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1275
+      value: -1184
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -616
+      value: -601
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
@@ -956,11 +981,27 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413637, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1618317697}
+    - target: {fileID: 7307897029756413636, guid: 5b2f21351b9ded6428e4c88024ec4475,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a46b80806029545b09f22e911b8ed3bc,
+        type: 3}
     - target: {fileID: 7307897029549379038, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -971,11 +1012,15 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 7307897029756413636, guid: 5b2f21351b9ded6428e4c88024ec4475,
+    - target: {fileID: 7307897029549379037, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a46b80806029545b09f22e911b8ed3bc,
+      propertyPath: m_FontData.m_FontSize
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307897029549379037, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
+      propertyPath: m_Text
+      value: "Nasp\xE4\u0165"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2f21351b9ded6428e4c88024ec4475, type: 3}
