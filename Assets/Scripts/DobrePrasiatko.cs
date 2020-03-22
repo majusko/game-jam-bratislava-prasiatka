@@ -12,9 +12,9 @@ public class DobrePrasiatko : MonoBehaviour
     public float lifetime;
     public float timeSpentUp;
     public float speedOfSlideUpAndDown;
-    public GameObject levelManager;
     public GameObject explotion;
 
+    private GameObject levelManager;
     private LevelManager levelManagerScript;
     private bool goDown = false;
     private bool imUp = false;
@@ -22,6 +22,7 @@ public class DobrePrasiatko : MonoBehaviour
 
     void Start()
     {
+        levelManager = GameObject.Find("LevelManager");
         levelManagerScript = levelManager.GetComponent<LevelManager>();
     }
 
