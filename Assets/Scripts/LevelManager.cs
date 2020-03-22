@@ -77,4 +77,53 @@ public class LevelManager : MonoBehaviour
         return spawnBehind;
     }
 
+
+    private void SaveScore(int score)
+    {
+        var player = new Player();
+
+
+        
+
+    }
+
+}
+
+
+public class Player
+{
+    private const string first = "first";
+    public int First
+    {
+        get { return PlayerPrefs.GetInt(first); }
+        set { PlayerPrefs.SetInt(first, value); }
+    }
+
+    private const string second = "second";
+    public int Second
+    {
+        get { return PlayerPrefs.GetInt(second); }
+        set { PlayerPrefs.SetInt(second, value); }
+    }
+
+    private const string third = "third";
+    public int Third
+    {
+        get { return PlayerPrefs.GetInt(third); }
+        set { PlayerPrefs.SetInt(third, value); }
+    }
+
+    private const string fourth = "fourth";
+    public int Fourth
+    {
+        get { return PlayerPrefs.GetInt(fourth); }
+        set { PlayerPrefs.SetInt(fourth, value); }
+    }
+
+    private const string fifth = "fifth";
+    public int Fifth
+    {
+        get { return PlayerPrefs.GetInt(fifth); }
+        set { PlayerPrefs.SetInt(fifth, value); }
+    }
 }
