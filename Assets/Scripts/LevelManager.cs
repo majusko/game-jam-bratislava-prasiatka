@@ -20,6 +20,8 @@ public class LevelManager : MonoBehaviour
     public float timeForLevelInSec;
     public Text score;
     public Text timer;
+    public string failScene;
+    public string winScene;
 
     public GameObject zivot1;
     public GameObject zivot2;
@@ -69,15 +71,12 @@ public class LevelManager : MonoBehaviour
 
         if (PlayerGlobalState.Instance.lifes <= 0 || (Time.time > levelWillEnd && PlayerGlobalState.Instance.levelPoints < pointsCoTreba))
         {
-            Debug.Log("ZEMRI");
-            SceneManager.LoadScene("FailScene");
+            SceneManager.LoadScene(failScene);
         }
 
-        if (PlayerGlobalState.Instance.lifes > 0 && Time.time > levelWillEnd && PlayerGlobalState.Instance.levelPoints > pointsCoTreba)
+        if (PlayerGlobalState.Instance.lifes > 0 && Time.time > levelWillEnd && PlayerGlobalState.Instance.levelPoints >= pointsCoTreba)
         {
-            Debug.Log("DALSI LEVEL");
-
-            SceneManager.LoadScene("WinScene1");
+            SceneManager.LoadScene(winScene);
         }
 
         Zivoty();
