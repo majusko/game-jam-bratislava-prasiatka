@@ -28,6 +28,17 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("SceneKomix1");
     }
 
+
+    public void LoadLevelTwo()
+    {
+        SceneManager.LoadScene("SampleScene2");
+    }
+
+    public void LoadLevelThree()
+    {
+        SceneManager.LoadScene("SampleScene3");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
