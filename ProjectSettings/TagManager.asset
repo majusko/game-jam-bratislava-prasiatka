@@ -47,3 +47,6 @@ TagManager:
   - name: Planety
     uniqueID: 650245339
     locked: 0
+  - name: Komix
+    uniqueID: 3383042201
+    locked: 0
