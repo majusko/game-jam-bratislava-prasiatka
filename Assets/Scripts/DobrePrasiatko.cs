@@ -13,6 +13,7 @@ public class DobrePrasiatko : MonoBehaviour
     public float timeSpentUp;
     public float speedOfSlideUpAndDown;
     public GameObject levelManager;
+    public GameObject explotion;
 
     private LevelManager levelManagerScript;
     private bool goDown = false;
@@ -49,31 +50,21 @@ public class DobrePrasiatko : MonoBehaviour
                 Invoke("GoDown", timeSpentUp);
             }
         }
-
-        if (Input.GetMouseButton(0))
-            Debug.Log("down");
-
-        //trasenie - ---
-        //transform.Rotate(0, 0, rotateSpeed * Time.deltaTime);
-        //float AngleAmount = (Mathf.Cos(Time.time * rotateSpeed) * 180) / Mathf.PI * 0.5f;
-        //AngleAmount = Mathf.Clamp(AngleAmount, -15, 15);
-        //transform.localRotation = Quaternion.Euler(0, 0, AngleAmount);
-        //trasenie - ---
-
     }
 
     void OnMouseDown()
     {
-
         if(somPrasa)
         {
-            levelManagerScript.KillPrasa();
+            PlayerGlobalState.Instance.lifes -= 1;
         } else
         {
             levelManagerScript.KillChobotnica();
         }
 
-        //TODO particle
+		GameObject particles = Instantiate(explotion, transform.position, Quaternion.identity) as GameObject;
+
+        Destroy(particles, 2);
 
         Destroy(gameObject);
     }

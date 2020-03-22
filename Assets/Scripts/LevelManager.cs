@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -23,17 +24,19 @@ public class LevelManager : MonoBehaviour
     private float nextActionTime = 0.0f;
     private Dictionary<string, float> closedHrnce = new Dictionary<string, float>();
     private int currentScore = 0;
-    private float levelWillEnd;
-    private int internalLives;
+    private float levelWillEnd = 0;
 
     void Start()
     {
         levelWillEnd = Time.time + timeForLevelInSec;
-        internalLives = lifes;
+        PlayerGlobalState.Instance.lifes = lifes;
     }
 
     void Update()
     {
+        //Debug.Log("--");
+        //Debug.Log(lifes);
+        //Debug.Log(internalLives);
         if (Time.time > nextActionTime)
         {
             nextActionTime += spawnSomethingEvery;
@@ -56,31 +59,21 @@ public class LevelManager : MonoBehaviour
         }
 
 
-        if (internalLives <= 0)
+        if (PlayerGlobalState.Instance.lifes <= 0)
         {
             Debug.Log("ZEMRI");
-            //TODO end screen
+            SceneManager.LoadScene("FailScene");
         }
 
         if (Time.time > levelWillEnd)
         {
             Debug.Log("DALSI LEVEL");
-            //TODO end level
+
+
+            SceneManager.LoadScene("WinScene1");
         }
 
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit))
-            {
-                if (hit.transform.name == "MyObjectName")
-                { print("My object is clicked by mouse"); }
-            }
-
-        }
+        Zivoty();
     }
 
     private void SpawnSomething()
@@ -141,30 +134,31 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void KillPrasa()
+    private void Zivoty()
     {
-        Debug.Log("killed prasa");
-
-        internalLives--;
-
-
-        Debug.Log(internalLives);
-        if (internalLives == 2)
+        if (PlayerGlobalState.Instance.lifes == 3)
+        {
+            zivot1.SetActive(true);
+            zivot2.SetActive(true);
+            zivot3.SetActive(true);
+        }
+        if (PlayerGlobalState.Instance.lifes == 2)
         {
             zivot1.SetActive(false);
-            Destroy(zivot1);
+            zivot2.SetActive(true);
+            zivot3.SetActive(true);
         }
-
-        if (internalLives == 1)
+        if (PlayerGlobalState.Instance.lifes == 1)
         {
+            zivot1.SetActive(false);
             zivot2.SetActive(false);
-            Destroy(zivot2);
+            zivot3.SetActive(true);
         }
-
-        if(internalLives == 0)
+        if (PlayerGlobalState.Instance.lifes == 0)
         {
+            zivot1.SetActive(false);
+            zivot2.SetActive(false);
             zivot3.SetActive(false);
-            Destroy(zivot3);
         }
     }
 
