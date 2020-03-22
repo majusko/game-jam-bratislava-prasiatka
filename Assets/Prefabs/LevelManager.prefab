@@ -61,9 +61,12 @@ MonoBehaviour:
   spawnSomethingEvery: 0.8
   chanceForPig: 0.5
   waitTimeForNext: 2
-  pointsZaChobotnica: 5
+  pointsZaChobotnica: 20
+  pointsCoTreba: 20
   lifes: 3
-  timeForLevelInSec: 90
+  timeForLevelInSec: 10
+  score: {fileID: 0}
+  timer: {fileID: 0}
   zivot1: {fileID: 0}
   zivot2: {fileID: 0}
   zivot3: {fileID: 0}

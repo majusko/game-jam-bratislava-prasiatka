@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -14,8 +15,11 @@ public class LevelManager : MonoBehaviour
     public float chanceForPig;
     public float waitTimeForNext;
     public int pointsZaChobotnica;
+    public int pointsCoTreba;
     public int lifes;
     public float timeForLevelInSec;
+    public Text score;
+    public Text timer;
 
     public GameObject zivot1;
     public GameObject zivot2;
@@ -25,18 +29,22 @@ public class LevelManager : MonoBehaviour
     private Dictionary<string, float> closedHrnce = new Dictionary<string, float>();
     private int currentScore = 0;
     private float levelWillEnd = 0;
+    private float timeStarted = 0;
 
     void Start()
     {
+        timeStarted = Time.time;
         levelWillEnd = Time.time + timeForLevelInSec;
         PlayerGlobalState.Instance.lifes = lifes;
+        PlayerGlobalState.Instance.levelPoints = 0;
     }
 
     void Update()
     {
-        //Debug.Log("--");
-        //Debug.Log(lifes);
-        //Debug.Log(internalLives);
+
+        score.text = PlayerGlobalState.Instance.levelPoints + "/" + pointsCoTreba;
+        timer.text = Mathf.RoundToInt(levelWillEnd - Time.time) + "s";
+
         if (Time.time > nextActionTime)
         {
             nextActionTime += spawnSomethingEvery;
@@ -59,16 +67,15 @@ public class LevelManager : MonoBehaviour
         }
 
 
-        if (PlayerGlobalState.Instance.lifes <= 0)
+        if (PlayerGlobalState.Instance.lifes <= 0 || (Time.time > levelWillEnd && PlayerGlobalState.Instance.levelPoints < pointsCoTreba))
         {
             Debug.Log("ZEMRI");
             SceneManager.LoadScene("FailScene");
         }
 
-        if (Time.time > levelWillEnd)
+        if (PlayerGlobalState.Instance.lifes > 0 && Time.time > levelWillEnd && PlayerGlobalState.Instance.levelPoints > pointsCoTreba)
         {
             Debug.Log("DALSI LEVEL");
-
 
             SceneManager.LoadScene("WinScene1");
         }
@@ -164,8 +171,7 @@ public class LevelManager : MonoBehaviour
 
     public void KillChobotnica()
     {
-        Debug.Log("killed chbot");
-        currentScore += pointsZaChobotnica;
+        PlayerGlobalState.Instance.levelPoints += pointsZaChobotnica;
     }
 }
 
