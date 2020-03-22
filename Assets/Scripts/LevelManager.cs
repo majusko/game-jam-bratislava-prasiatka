@@ -12,13 +12,19 @@ public class LevelManager : MonoBehaviour
     public float spawnSomethingEvery;
     public float chanceForPig;
     public float waitTimeForNext;
+    public int pointsZaChobotnica;
+    public int lifes;
+    public float timeForLevelInSec;
 
     private List<GameObject> currentlySpawned;
     private float nextActionTime = 0.0f;
     private Dictionary<string, float> closedHrnce = new Dictionary<string, float>();
+    private int currentScore;
+    private float levelWillEnd;
 
     void Start()
     {
+        levelWillEnd = Time.time + timeForLevelInSec;
     }
 
     void Update()
@@ -41,6 +47,17 @@ public class LevelManager : MonoBehaviour
         foreach(string removal in removals)
         {
             closedHrnce.Remove(removal);
+        }
+
+
+        if(lifes <= 0)
+        {
+            //TODO end screen
+        }
+
+        if(Time.time > levelWillEnd)
+        {
+            //TODO end level
         }
     }
 
@@ -82,11 +99,35 @@ public class LevelManager : MonoBehaviour
     {
         var player = new Player();
 
-
-        
-
+        if(score > player.First)
+        {
+            player.First = score;
+        } else if(score > player.Second) {
+            player.Second = score;
+        }
+        else if (score > player.Third)
+        {
+            player.Third = score;
+        }
+        else if (score > player.Fourth)
+        {
+            player.Fourth = score;
+        }
+        else if (score > player.Fifth)
+        {
+            player.Fifth = score;
+        }
     }
 
+    private void KillPrasa()
+    {
+        lifes--;
+    }
+
+    private void KillChobotnica()
+    {
+        currentScore += pointsZaChobotnica;
+    }
 }
 
 
