@@ -4016,9 +4016,9 @@ MonoBehaviour:
   spawningOctopus:
   - {fileID: 484374485543703909, guid: 14de1eebc508b480280523871afefdb8, type: 3}
   - {fileID: 484374485543703909, guid: b1a9da8bc09c041019bfff7435b42370, type: 3}
-  spawnSomethingEvery: 0.6
+  spawnSomethingEvery: 0.25
   chanceForPig: 0.55
-  waitTimeForNext: 1.5
+  waitTimeForNext: 1.3
   pointsZaChobotnica: 1
   pointsCoTreba: 35
   lifes: 3
