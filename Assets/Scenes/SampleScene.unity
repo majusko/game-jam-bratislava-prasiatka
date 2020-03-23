@@ -272,6 +272,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &116896066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 116896067}
+  m_Layer: 0
+  m_Name: FlyTo2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &116896067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116896066}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2, y: 12.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 409523395}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288324077
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,8 +465,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 409523395}
-  - component: {fileID: 409523394}
-  - component: {fileID: 409523393}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -444,56 +472,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &409523393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409523392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e50824a7ec8133447993258748418112, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chobotnicaPrefab: {fileID: 6462117731277140751, guid: b107c8c6b6f009a49805f31d2fc3c61e,
-    type: 3}
-  prasaPrefab: {fileID: 6462117731277140751, guid: 429286e9cae465346aaffc9ff876ecf6,
-    type: 3}
-  destroyTime: 2
-  sancaNaPrasa: 30
-  sancaNaCobotnicu: 70
-  intervalMin: 2
-  intervalMax: 5
-  speed: 4
-  chobotnicaSound: {fileID: 8300000, guid: 41f0a8eeed32a964087886ef31998132, type: 3}
-  chobotnicaSoundVolume: 0.25
---- !u!61 &409523394
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409523392}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!4 &409523395
 Transform:
   m_ObjectHideFlags: 0
@@ -504,7 +482,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.63, y: -5.68, z: 0.03700647}
   m_LocalScale: {x: -8.49, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 839587912}
+  - {fileID: 116896067}
+  - {fileID: 1249253452}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1577,6 +1558,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 786161595}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &839587911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 839587912}
+  m_Layer: 0
+  m_Name: FlyTo1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &839587912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839587911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.73, y: 12.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 409523395}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &921851228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2102,6 +2113,36 @@ Transform:
   m_Father: {fileID: 924648345}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 23.795002}
+--- !u!1 &1249253451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1249253452}
+  m_Layer: 0
+  m_Name: FlyTo3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1249253452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249253451}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.28, y: 12.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 409523395}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1351334143
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,7 +2577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aae32e90e8d740e6b5ec0bffb487c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
   planetObjects:
   - {fileID: 614015139}
   - {fileID: 1594465193}
@@ -2545,13 +2585,16 @@ MonoBehaviour:
   - {fileID: 1183233986}
   - {fileID: 1791258037}
   spawningPigs:
-  - {fileID: 484374485543703909, guid: 59132dd5cf2ff4903aaf6e7a320fd267, type: 3}
-  - {fileID: 484374485543703909, guid: b1be811e6a6d74f388f460d94c927bae, type: 3}
   - {fileID: 484374485543703909, guid: 76c35de4748fa4629a170ad2b7dcabfa, type: 3}
+  - {fileID: 484374485543703909, guid: 59132dd5cf2ff4903aaf6e7a320fd267, type: 3}
+  - {fileID: 484374485543703909, guid: 283ac98a9eaf747cd9a26fd8a44276d9, type: 3}
+  - {fileID: 484374485543703909, guid: 4175d91dc1a164847b87e315db83e944, type: 3}
   spawningOctopus:
   - {fileID: 484374485543703909, guid: 14de1eebc508b480280523871afefdb8, type: 3}
   - {fileID: 484374485543703909, guid: b1a9da8bc09c041019bfff7435b42370, type: 3}
+  - {fileID: 484374485543703909, guid: d2400d1c5a3f4411289ddf0f80570d77, type: 3}
   spawnSomethingEvery: 0.6
+  spawnFlyingChance: 0.2
   chanceForPig: 0.2
   waitTimeForNext: 1.5
   pointsZaChobotnica: 1
@@ -2565,6 +2608,15 @@ MonoBehaviour:
   zivot1: {fileID: 2077755342}
   zivot2: {fileID: 2006967542}
   zivot3: {fileID: 1351334143}
+  flyPlaceToStart: {fileID: 409523392}
+  flyPigs:
+  - {fileID: 484374485543703909, guid: f35e9c6a6f88d4be7a64280f2777856e, type: 3}
+  flyOctopus:
+  - {fileID: 484374485543703909, guid: e0247b53197e54995ba52edc76822a40, type: 3}
+  flyToPlaces:
+  - {fileID: 839587911}
+  - {fileID: 116896066}
+  - {fileID: 1249253451}
 --- !u!1 &1674678530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,5 +3730,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394211, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 39a43e39f104dc4498b93a5f004b164b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d762033aadb472341b006db2341dedb4, type: 3}

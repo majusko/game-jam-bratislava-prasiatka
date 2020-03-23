@@ -32,27 +32,28 @@ public class DobrePrasiatko : MonoBehaviour
 
     void Update()
     {
-        Transform animalUp = transform.parent.Find("AnimalUp");
-        Transform animalDown = transform.parent.Find("AnimalDown");
+        if(transform.parent != null) {
+            Transform animalUp = transform.parent.Find("AnimalUp");
+            Transform animalDown = transform.parent.Find("AnimalDown");
 
-
-        if(goDown)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, animalDown.position, speedOfSlideUpAndDown * Time.deltaTime);
-
-            if (Vector3.Distance(transform.position, animalDown.position) < 0.1f)
+            if (goDown)
             {
-                gameObject.SetActive(false);
-                Destroy(gameObject);
+                transform.position = Vector3.MoveTowards(transform.position, animalDown.position, speedOfSlideUpAndDown * Time.deltaTime);
+
+                if (Vector3.Distance(transform.position, animalDown.position) < 0.1f)
+                {
+                    gameObject.SetActive(false);
+                    Destroy(gameObject);
+                }
             }
-        }
-        else
-        {
-            transform.position = Vector3.MoveTowards(transform.position, animalUp.position, speedOfSlideUpAndDown * Time.deltaTime);
-            if (!imUp && transform.position.Equals(animalUp.position))
+            else
             {
-                imUp = true;
-                Invoke("GoDown", timeSpentUp);
+                transform.position = Vector3.MoveTowards(transform.position, animalUp.position, speedOfSlideUpAndDown * Time.deltaTime);
+                if (!imUp && transform.position.Equals(animalUp.position))
+                {
+                    imUp = true;
+                    Invoke("GoDown", timeSpentUp);
+                }
             }
         }
     }

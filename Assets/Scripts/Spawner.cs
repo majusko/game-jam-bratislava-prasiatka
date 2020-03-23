@@ -7,22 +7,20 @@ using Random = System.Random;
 
 public class Spawner : MonoBehaviour
 {
+    public GameObject chobotnicaPrefab;
+    public GameObject prasaPrefab;
+    public List<GameObject> flyToPlaces;
 
-
-    [SerializeField] GameObject chobotnicaPrefab;
-    [SerializeField] GameObject prasaPrefab;
-
-    [SerializeField] float destroyTime = 1;   
-    [SerializeField] int sancaNaPrasa = 30;
-    [SerializeField] int sancaNaCobotnicu = 70;
-    [SerializeField] int intervalMin = 2;
-    [SerializeField] int intervalMax = 10;
-    [SerializeField] float speed = 2;
-    [SerializeField] AudioClip chobotnicaSound;
-    [SerializeField] [Range(0, 1)] float chobotnicaSoundVolume = 0.25f;
+    public float destroyTime = 1;
+    public int sancaNaPrasa = 30;
+    public int sancaNaCobotnicu = 70;
+    public int intervalMin = 2;
+    public int intervalMax = 10;
+    public float speed = 2;
+    public AudioClip chobotnicaSound;
+    [Range(0, 1)] public float chobotnicaSoundVolume = 0.25f;
     private Random rngesus = new Random();
     
-    // Use this for initialization
     void Start()
     {
         Invoke("Spawn", UnityEngine.Random.Range(intervalMin, intervalMax));

@@ -2000,6 +2000,80 @@ Transform:
   m_Father: {fileID: 1907074881}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -43.092003}
+--- !u!1001 &920197520
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6034155076972394210, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_Name
+      value: LoopAudioPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394208, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034155076972394211, guid: d762033aadb472341b006db2341dedb4,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 39a43e39f104dc4498b93a5f004b164b, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d762033aadb472341b006db2341dedb4, type: 3}
 --- !u!1001 &921851228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3431,12 +3505,16 @@ MonoBehaviour:
   - {fileID: 1183233986}
   - {fileID: 1791258037}
   spawningPigs:
-  - {fileID: 484374485543703909, guid: 59132dd5cf2ff4903aaf6e7a320fd267, type: 3}
   - {fileID: 484374485543703909, guid: b1be811e6a6d74f388f460d94c927bae, type: 3}
-  - {fileID: 484374485543703909, guid: 76c35de4748fa4629a170ad2b7dcabfa, type: 3}
+  - {fileID: 484374485543703909, guid: fa18328b2540c4bbe8a856c6dd260fda, type: 3}
+  - {fileID: 484374485543703909, guid: 088e5123f85ae4cbeaf41778fae65d30, type: 3}
+  - {fileID: 484374485543703909, guid: c29591a0d5d0c4ab68b37e94cac3a91c, type: 3}
+  - {fileID: 484374485543703909, guid: 283ac98a9eaf747cd9a26fd8a44276d9, type: 3}
+  - {fileID: 484374485543703909, guid: 6b219e331c9614a2abf0259ff331dd84, type: 3}
   spawningOctopus:
   - {fileID: 484374485543703909, guid: 14de1eebc508b480280523871afefdb8, type: 3}
   - {fileID: 484374485543703909, guid: b1a9da8bc09c041019bfff7435b42370, type: 3}
+  - {fileID: 484374485543703909, guid: d2400d1c5a3f4411289ddf0f80570d77, type: 3}
   spawnSomethingEvery: 0.5
   chanceForPig: 0.4
   waitTimeForNext: 1.5

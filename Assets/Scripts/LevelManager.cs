@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
 
-    public GameObject planet;
     public List<GameObject> planetObjects;
     public List<GameObject> spawningPigs;
     public List<GameObject> spawningOctopus;
     public float spawnSomethingEvery;
+    public float spawnFlyingChance;
     public float chanceForPig;
     public float waitTimeForNext;
     public int pointsZaChobotnica;
@@ -23,10 +23,14 @@ public class LevelManager : MonoBehaviour
     public string failScene;
     public string winScene;
    
-
     public GameObject zivot1;
     public GameObject zivot2;
     public GameObject zivot3;
+
+    public GameObject flyPlaceToStart;
+    public List<GameObject> flyPigs;
+    public List<GameObject> flyOctopus;
+    public List<GameObject> flyToPlaces;
 
     private float nextActionTime = 1.5f;
     private Dictionary<string, float> closedHrnce = new Dictionary<string, float>();
@@ -53,8 +57,18 @@ public class LevelManager : MonoBehaviour
         if (started && Time.time > nextActionTime)
         {
             nextActionTime += spawnSomethingEvery;
-            SpawnSomething();
+
+            if (Random.Range(0f, 1f) < spawnFlyingChance)
+            {
+                SpawnSomethingFlying();
+            }
+            else
+            {
+                SpawnSomething();
+            }
+
         }
+
 
         var removals = new List<string>();
 
@@ -110,8 +124,25 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    private GameObject NextPlaceToPick()
+    private void SpawnSomethingFlying()
     {
+        GameObject spawningObject;
+
+        if (Random.Range(0f, 1f) < chanceForPig)
+        {
+            spawningObject = flyPigs[Random.Range(0, flyPigs.Count)];
+        }
+        else
+        {
+            spawningObject = flyOctopus[Random.Range(0, flyOctopus.Count)];
+        }
+
+        GameObject intantiated = Instantiate(spawningObject, flyPlaceToStart.transform.position, Quaternion.identity);
+
+    }
+
+
+    private GameObject NextPlaceToPick(){
         GameObject spawnBehind = planetObjects[Random.Range(0, planetObjects.Count)];
 
         if (!closedHrnce.ContainsKey(spawnBehind.name))
@@ -183,6 +214,11 @@ public class LevelManager : MonoBehaviour
     {
         PlayerGlobalState.Instance.levelPoints += pointsZaChobotnica;
         
+    }
+
+    public List<GameObject> getFlyTo()
+    {
+        return flyToPlaces;
     }
 }
 
