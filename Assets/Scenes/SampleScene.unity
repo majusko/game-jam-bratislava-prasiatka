@@ -2660,6 +2660,8 @@ MonoBehaviour:
   timer: {fileID: 756687738}
   failScene: FailScene
   winScene: WinScene1
+  chobotnicaKillSound: {fileID: 8300000, guid: b221c25d2fdfb634bb4d108142c767e6, type: 3}
+  chobotnicaSoundVolume: 0.25
   zivot1: {fileID: 709848306}
   zivot2: {fileID: 724338779}
   zivot3: {fileID: 1962073446}

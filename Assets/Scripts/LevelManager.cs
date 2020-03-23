@@ -22,6 +22,7 @@ public class LevelManager : MonoBehaviour
     public Text timer;
     public string failScene;
     public string winScene;
+   
 
     public GameObject zivot1;
     public GameObject zivot2;
@@ -181,6 +182,7 @@ public class LevelManager : MonoBehaviour
     public void KillChobotnica()
     {
         PlayerGlobalState.Instance.levelPoints += pointsZaChobotnica;
+        
     }
 }
 

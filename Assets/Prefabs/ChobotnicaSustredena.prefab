@@ -102,6 +102,10 @@ MonoBehaviour:
   speedOfSlideUpAndDown: 10
   explotion: {fileID: 804806273147866175, guid: bbf46abc86d32ea49a1dda98763eba36,
     type: 3}
+  prasaKillSound: {fileID: 8300000, guid: cace96751662aed46a00420af380088c, type: 3}
+  prasaSoundVolume: 0.25
+  chobotnicaKillSound: {fileID: 8300000, guid: b221c25d2fdfb634bb4d108142c767e6, type: 3}
+  chobotnicaSoundVolume: 0.25
 --- !u!61 &5708327845344491702
 BoxCollider2D:
   m_ObjectHideFlags: 0
