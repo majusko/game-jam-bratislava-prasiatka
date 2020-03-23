@@ -2571,7 +2571,7 @@ MonoBehaviour:
   chanceForPig: 0.2
   waitTimeForNext: 1.5
   pointsZaChobotnica: 1
-  pointsCoTreba: 55
+  pointsCoTreba: 45
   lifes: 3
   timeForLevelInSec: 60
   score: {fileID: 747387473}
