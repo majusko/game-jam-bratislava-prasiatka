@@ -1,0 +1,4 @@
+#Mon Mar 23 01:52:57 CET 2020
+base.0=/Users/mkapusta/gamejam/space/GameJamPrasiatka/Temp/gradleOut/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
