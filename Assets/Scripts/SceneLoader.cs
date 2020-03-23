@@ -29,6 +29,11 @@ public class SceneLoader : MonoBehaviour
     }
 
 
+    public void LoadLevelOne()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
     public void LoadLevelTwo()
     {
         SceneManager.LoadScene("SampleScene2");

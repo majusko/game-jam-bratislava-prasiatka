@@ -98,10 +98,8 @@ MonoBehaviour:
   speed: 20
   rotateSpeed: 50
   lifetime: 2
-  timeSpentUp: 1
+  timeSpentUp: 0.6
   speedOfSlideUpAndDown: 10
-  levelManager: {fileID: 8294078149036964404, guid: 13643d8fb587949859bbca99bc11a062,
-    type: 3}
   explotion: {fileID: 804806273147866175, guid: bbf46abc86d32ea49a1dda98763eba36,
     type: 3}
 --- !u!61 &5708327845344491702

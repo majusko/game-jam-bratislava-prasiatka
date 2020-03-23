@@ -27,11 +27,12 @@ public class LevelManager : MonoBehaviour
     public GameObject zivot2;
     public GameObject zivot3;
 
-    private float nextActionTime = 0.0f;
+    private float nextActionTime = 1.5f;
     private Dictionary<string, float> closedHrnce = new Dictionary<string, float>();
     private int currentScore = 0;
     private float levelWillEnd = 0;
     private float timeStarted = 0;
+    private bool started = false;
 
     void Start()
     {
@@ -39,6 +40,7 @@ public class LevelManager : MonoBehaviour
         levelWillEnd = Time.time + timeForLevelInSec;
         PlayerGlobalState.Instance.lifes = lifes;
         PlayerGlobalState.Instance.levelPoints = 0;
+        started = true;
     }
 
     void Update()
@@ -47,7 +49,7 @@ public class LevelManager : MonoBehaviour
         score.text = PlayerGlobalState.Instance.levelPoints + "/" + pointsCoTreba;
         timer.text = Mathf.RoundToInt(levelWillEnd - Time.time) + "s";
 
-        if (Time.time > nextActionTime)
+        if (started && Time.time > nextActionTime)
         {
             nextActionTime += spawnSomethingEvery;
             SpawnSomething();
@@ -86,33 +88,41 @@ public class LevelManager : MonoBehaviour
     {
         GameObject spawnBehind = NextPlaceToPick();
 
-        GameObject spawningObject;
+        if(spawnBehind != null)
+        {
 
-        if(Random.Range(0f, 1f) < chanceForPig)
-        {
-            spawningObject = spawningPigs[Random.Range(0, spawningPigs.Count)];
-        } else
-        {
-            spawningObject = spawningOctopus[Random.Range(0, spawningOctopus.Count)];
+            GameObject spawningObject;
+
+            if (Random.Range(0f, 1f) < chanceForPig)
+            {
+                spawningObject = spawningPigs[Random.Range(0, spawningPigs.Count)];
+            }
+            else
+            {
+                spawningObject = spawningOctopus[Random.Range(0, spawningOctopus.Count)];
+            }
+
+            GameObject intantiated = Instantiate(spawningObject, spawnBehind.transform.position, spawnBehind.transform.rotation);
+
+            intantiated.transform.SetParent(spawnBehind.transform, true);
         }
 
-        GameObject intantiated = Instantiate(spawningObject, spawnBehind.transform.position, spawnBehind.transform.rotation);
-
-        intantiated.transform.SetParent(spawnBehind.transform, true);
     }
 
     private GameObject NextPlaceToPick()
     {
         GameObject spawnBehind = planetObjects[Random.Range(0, planetObjects.Count)];
 
-        if (closedHrnce.ContainsKey(spawnBehind.name))
+        if (!closedHrnce.ContainsKey(spawnBehind.name))
         {
-            return NextPlaceToPick();
+            //return NextPlaceToPick();
+            closedHrnce[spawnBehind.name] = Time.time + waitTimeForNext;
+
+            return spawnBehind;
         }
 
-        closedHrnce[spawnBehind.name] = Time.time + waitTimeForNext;
+        return null;
 
-        return spawnBehind;
     }
 
 

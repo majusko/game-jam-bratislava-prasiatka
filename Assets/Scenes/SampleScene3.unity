@@ -4016,13 +4016,13 @@ MonoBehaviour:
   spawningOctopus:
   - {fileID: 484374485543703909, guid: 14de1eebc508b480280523871afefdb8, type: 3}
   - {fileID: 484374485543703909, guid: b1a9da8bc09c041019bfff7435b42370, type: 3}
-  spawnSomethingEvery: 0.8
-  chanceForPig: 0.5
-  waitTimeForNext: 2
-  pointsZaChobotnica: 20
-  pointsCoTreba: 20
+  spawnSomethingEvery: 0.6
+  chanceForPig: 0.6
+  waitTimeForNext: 1.5
+  pointsZaChobotnica: 1
+  pointsCoTreba: 40
   lifes: 3
-  timeForLevelInSec: 10
+  timeForLevelInSec: 60
   score: {fileID: 747387473}
   timer: {fileID: 756687738}
   failScene: FailScene
