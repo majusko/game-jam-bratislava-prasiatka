@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{5B69A401-186B-DA3A-027A-7537686C200A}|">
+﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/LiettajiicePrasiatko.cs">
     <Files>
       <File FileName="Assets/Scripts/GreenPlanetLogic.cs" Line="26" Column="38" />
@@ -8,29 +8,23 @@
       <File FileName="Assets/Scripts/PlayerGlobalState.cs" Line="9" Column="27" />
       <File FileName="Assets/Scripts/LevelManager.cs" Line="140" Column="117" />
       <File FileName="Assets/Scripts/DobrePrasiatko.cs" Line="40" Column="14" />
-      <File FileName="Assets/LiettajiicePrasiatko.cs" Line="41" Column="1" />
+      <File FileName="Assets/LiettajiicePrasiatko.cs" Line="40" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="GameJamPrasiatka" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
-              <Node name="LiettajiicePrasiatko.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="GameJamPrasiatka" expanded="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="GameJamPrasiatka" expanded="True" selected="True" />
+          <Node name="GameJamPrasiatka" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6d072f3b-1a37-4b9a-bf83-9fc12fa982b2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

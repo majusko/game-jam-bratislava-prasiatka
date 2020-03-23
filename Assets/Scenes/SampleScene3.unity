@@ -272,6 +272,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &43410502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 43410503}
+  m_Layer: 0
+  m_Name: FlyTo1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &43410503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43410502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.73, y: 12.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1466677188}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &236833485
 GameObject:
   m_ObjectHideFlags: 0
@@ -3008,6 +3038,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1243872373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1243872374}
+  m_Layer: 0
+  m_Name: FlyTo3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1243872374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243872373}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.28, y: 12.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1466677188}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1370388775
 GameObject:
   m_ObjectHideFlags: 0
@@ -3166,6 +3226,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1466677187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1466677188}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1466677188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466677187}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.63, y: -5.68, z: 0.03700647}
+  m_LocalScale: {x: -8.49, y: 1, z: 1}
+  m_Children:
+  - {fileID: 43410503}
+  - {fileID: 1897521088}
+  - {fileID: 1243872374}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1469198159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,7 +3970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aae32e90e8d740e6b5ec0bffb487c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
   planetObjects:
   - {fileID: 614015139}
   - {fileID: 1594465193}
@@ -3903,6 +3995,7 @@ MonoBehaviour:
   - {fileID: 484374485543703909, guid: b1a9da8bc09c041019bfff7435b42370, type: 3}
   - {fileID: 484374485543703909, guid: d2400d1c5a3f4411289ddf0f80570d77, type: 3}
   spawnSomethingEvery: 0.25
+  spawnFlyingChance: 0.31
   chanceForPig: 0.55
   waitTimeForNext: 1.3
   pointsZaChobotnica: 1
@@ -3916,6 +4009,20 @@ MonoBehaviour:
   zivot1: {fileID: 1491635976}
   zivot2: {fileID: 1853069991}
   zivot3: {fileID: 1961714976}
+  flyPlaceToStart: {fileID: 1466677187}
+  flyPigs:
+  - {fileID: 484374485543703909, guid: 9a04ea8340d5c40b68c081f92b3021de, type: 3}
+  - {fileID: 484374485543703909, guid: f35e9c6a6f88d4be7a64280f2777856e, type: 3}
+  - {fileID: 484374485543703909, guid: e5d7d4eb2836f4ed7a6f6a8e9e536027, type: 3}
+  - {fileID: 484374485543703909, guid: 4550cb00c86ad42f49ae0ba5faec8e59, type: 3}
+  flyOctopus:
+  - {fileID: 484374485543703909, guid: e0247b53197e54995ba52edc76822a40, type: 3}
+  - {fileID: 484374485543703909, guid: f4b8bbba15b674e90867b7d09f6c5f77, type: 3}
+  - {fileID: 484374485543703909, guid: a50c76a069fdc4ba5ba97c2f7bef7331, type: 3}
+  flyToPlaces:
+  - {fileID: 43410502}
+  - {fileID: 1897521087}
+  - {fileID: 1243872373}
 --- !u!1 &1634930402
 GameObject:
   m_ObjectHideFlags: 0
@@ -4655,6 +4762,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.897}
+--- !u!1 &1897521087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1897521088}
+  m_Layer: 0
+  m_Name: FlyTo2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1897521088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897521087}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2, y: 12.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1466677188}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914123697
 GameObject:
   m_ObjectHideFlags: 0

@@ -541,6 +541,69 @@ Transform:
   m_Father: {fileID: 1949798687}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 33.015003}
+--- !u!1 &197844957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197844958}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &197844958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197844957}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.63, y: -5.68, z: 0.03700647}
+  m_LocalScale: {x: -8.49, y: 1, z: 1}
+  m_Children:
+  - {fileID: 268560934}
+  - {fileID: 1636485188}
+  - {fileID: 910458577}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &268560933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268560934}
+  m_Layer: 0
+  m_Name: FlyTo1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268560934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268560933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.73, y: 12.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 197844958}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &271398763
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,9 +669,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -562507667
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: -1068415649
+  m_SortingLayer: 3
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: faa4de5da96b54e7bb7a5b6357dce461, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1953,9 +2016,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -562507667
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: -1068415649
+  m_SortingLayer: 3
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: faa4de5da96b54e7bb7a5b6357dce461, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2000,6 +2063,36 @@ Transform:
   m_Father: {fileID: 1907074881}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -43.092003}
+--- !u!1 &910458576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 910458577}
+  m_Layer: 0
+  m_Name: FlyTo3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &910458577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910458576}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.28, y: 12.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 197844958}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &920197520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2845,9 +2938,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -562507667
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: -1068415649
+  m_SortingLayer: 3
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: faa4de5da96b54e7bb7a5b6357dce461, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3496,7 +3589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aae32e90e8d740e6b5ec0bffb487c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 1907074879}
   planetObjects:
   - {fileID: 614015139}
   - {fileID: 1594465193}
@@ -3516,6 +3608,7 @@ MonoBehaviour:
   - {fileID: 484374485543703909, guid: b1a9da8bc09c041019bfff7435b42370, type: 3}
   - {fileID: 484374485543703909, guid: d2400d1c5a3f4411289ddf0f80570d77, type: 3}
   spawnSomethingEvery: 0.5
+  spawnFlyingChance: 0.24
   chanceForPig: 0.4
   waitTimeForNext: 1.5
   pointsZaChobotnica: 1
@@ -3529,6 +3622,50 @@ MonoBehaviour:
   zivot1: {fileID: 367140718}
   zivot2: {fileID: 825441891}
   zivot3: {fileID: 1053635917}
+  flyPlaceToStart: {fileID: 197844957}
+  flyPigs:
+  - {fileID: 484374485543703909, guid: 9a04ea8340d5c40b68c081f92b3021de, type: 3}
+  - {fileID: 484374485543703909, guid: f35e9c6a6f88d4be7a64280f2777856e, type: 3}
+  - {fileID: 484374485543703909, guid: e5d7d4eb2836f4ed7a6f6a8e9e536027, type: 3}
+  - {fileID: 484374485543703909, guid: 4550cb00c86ad42f49ae0ba5faec8e59, type: 3}
+  flyOctopus:
+  - {fileID: 484374485543703909, guid: e0247b53197e54995ba52edc76822a40, type: 3}
+  - {fileID: 484374485543703909, guid: f4b8bbba15b674e90867b7d09f6c5f77, type: 3}
+  - {fileID: 484374485543703909, guid: a50c76a069fdc4ba5ba97c2f7bef7331, type: 3}
+  flyToPlaces:
+  - {fileID: 268560933}
+  - {fileID: 1636485187}
+  - {fileID: 910458576}
+--- !u!1 &1636485187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1636485188}
+  m_Layer: 0
+  m_Name: FlyTo2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1636485188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636485187}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2, y: 12.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 197844958}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1654032240
 GameObject:
   m_ObjectHideFlags: 0

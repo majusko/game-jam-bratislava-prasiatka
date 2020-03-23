@@ -2594,7 +2594,7 @@ MonoBehaviour:
   - {fileID: 484374485543703909, guid: b1a9da8bc09c041019bfff7435b42370, type: 3}
   - {fileID: 484374485543703909, guid: d2400d1c5a3f4411289ddf0f80570d77, type: 3}
   spawnSomethingEvery: 0.6
-  spawnFlyingChance: 0.2
+  spawnFlyingChance: 0.17
   chanceForPig: 0.2
   waitTimeForNext: 1.5
   pointsZaChobotnica: 1
@@ -2610,9 +2610,14 @@ MonoBehaviour:
   zivot3: {fileID: 1351334143}
   flyPlaceToStart: {fileID: 409523392}
   flyPigs:
+  - {fileID: 484374485543703909, guid: 9a04ea8340d5c40b68c081f92b3021de, type: 3}
   - {fileID: 484374485543703909, guid: f35e9c6a6f88d4be7a64280f2777856e, type: 3}
+  - {fileID: 484374485543703909, guid: e5d7d4eb2836f4ed7a6f6a8e9e536027, type: 3}
+  - {fileID: 484374485543703909, guid: 4550cb00c86ad42f49ae0ba5faec8e59, type: 3}
   flyOctopus:
   - {fileID: 484374485543703909, guid: e0247b53197e54995ba52edc76822a40, type: 3}
+  - {fileID: 484374485543703909, guid: f4b8bbba15b674e90867b7d09f6c5f77, type: 3}
+  - {fileID: 484374485543703909, guid: a50c76a069fdc4ba5ba97c2f7bef7331, type: 3}
   flyToPlaces:
   - {fileID: 839587911}
   - {fileID: 116896066}
