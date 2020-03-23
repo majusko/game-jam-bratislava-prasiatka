@@ -41,20 +41,23 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        timeStarted = Time.time;
-        levelWillEnd = Time.time + timeForLevelInSec;
+        timeStarted = Time.timeSinceLevelLoad;
+        levelWillEnd = Time.timeSinceLevelLoad + timeForLevelInSec;
         PlayerGlobalState.Instance.lifes = lifes;
         PlayerGlobalState.Instance.levelPoints = 0;
         started = true;
+
+
+        Debug.Log(Time.timeSinceLevelLoad);
     }
 
     void Update()
     {
 
         score.text = PlayerGlobalState.Instance.levelPoints + "/" + pointsCoTreba;
-        timer.text = Mathf.RoundToInt(levelWillEnd - Time.time) + "s";
+        timer.text = Mathf.RoundToInt(levelWillEnd - Time.timeSinceLevelLoad) + "s";
 
-        if (started && Time.time > nextActionTime)
+        if (started && Time.timeSinceLevelLoad > nextActionTime)
         {
             nextActionTime += spawnSomethingEvery;
 
@@ -74,7 +77,7 @@ public class LevelManager : MonoBehaviour
 
         foreach (KeyValuePair<string, float> entry in closedHrnce)
         {
-            if (entry.Value < Time.time)
+            if (entry.Value < Time.timeSinceLevelLoad)
             {
                 removals.Add(entry.Key);
             }
@@ -86,12 +89,12 @@ public class LevelManager : MonoBehaviour
         }
 
 
-        if (PlayerGlobalState.Instance.lifes <= 0 || (Time.time > levelWillEnd && PlayerGlobalState.Instance.levelPoints < pointsCoTreba))
+        if (PlayerGlobalState.Instance.lifes <= 0 || (Time.timeSinceLevelLoad > levelWillEnd && PlayerGlobalState.Instance.levelPoints < pointsCoTreba))
         {
             SceneManager.LoadScene(failScene);
         }
 
-        if (PlayerGlobalState.Instance.lifes > 0 && Time.time > levelWillEnd && PlayerGlobalState.Instance.levelPoints >= pointsCoTreba)
+        if (PlayerGlobalState.Instance.lifes > 0 && Time.timeSinceLevelLoad > levelWillEnd && PlayerGlobalState.Instance.levelPoints >= pointsCoTreba)
         {
             SceneManager.LoadScene(winScene);
         }
@@ -147,8 +150,7 @@ public class LevelManager : MonoBehaviour
 
         if (!closedHrnce.ContainsKey(spawnBehind.name))
         {
-            //return NextPlaceToPick();
-            closedHrnce[spawnBehind.name] = Time.time + waitTimeForNext;
+            closedHrnce[spawnBehind.name] = Time.timeSinceLevelLoad + waitTimeForNext;
 
             return spawnBehind;
         }

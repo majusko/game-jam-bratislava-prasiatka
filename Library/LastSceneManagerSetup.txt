@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/SampleScene.unity
-=======
-- path: Assets/Scenes/particleScene.unity
->>>>>>> 0756057c9d0f5ced63a5a0d086dba1211bb90116
+- path: Assets/Scenes/SceneKomix2.unity
   isLoaded: 1
   isActive: 1

@@ -25,8 +25,6 @@ public class LiettajiicePrasiatko : MonoBehaviour
         flyToPlaces = levelManagerScript.getFlyTo();
         flyTo = flyToPlaces[Random.Range(0, flyToPlaces.Count)].transform.position;
         directionrotate = (Random.value > 0.5f);
-
-        Debug.Log(flyToPlaces.Count);
     }
 
     void Update()
