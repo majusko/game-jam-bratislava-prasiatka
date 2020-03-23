@@ -427,8 +427,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "No prasiatka sa nevzd\xE1vaj\xFA. Maj\xFA vypracovan\xFD skvel\xFD pl\xE1n\r\nznovuprevzatia
-    svojho domova."
+  m_Text: "No prasiatka sa nevzd\xE1vaj\xFA. Maj\xFA vypracovan\xFD skvel\xFD pl\xE1n\r\nako
+    svoj domov zachr\xE1ni\u0165."
 --- !u!222 &602868198
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1188,12 +1188,12 @@ PrefabInstance:
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1161
+      value: 1277
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -592
+      value: -614
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
@@ -1238,12 +1238,12 @@ PrefabInstance:
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830612, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
@@ -1337,12 +1337,12 @@ PrefabInstance:
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1191
+      value: -1317
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -598
+      value: -633
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
@@ -1387,24 +1387,24 @@ PrefabInstance:
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
-    - target: {fileID: 7307897029756413637, guid: 5b2f21351b9ded6428e4c88024ec4475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1618317697}
     - target: {fileID: 7307897029756413636, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a46b80806029545b09f22e911b8ed3bc,
         type: 3}
+    - target: {fileID: 7307897029756413637, guid: 5b2f21351b9ded6428e4c88024ec4475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1618317697}
     - target: {fileID: 7307897029549379038, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.y

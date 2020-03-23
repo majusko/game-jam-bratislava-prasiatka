@@ -535,7 +535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 733, y: -60}
+  m_AnchoredPosition: {x: 639, y: -70}
   m_SizeDelta: {x: 1369.5, y: 515.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602868197
@@ -571,8 +571,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ten zah\u0155\u0148a hlavne tvoju pomoc. A to, \u010Do najviac\r vyb\xFAcha\u0165
-    chobotnice po makovici."
+  m_Text: "Prasiatka v\u0161ak potrebuj\xFA tvoju pomoc. Pridaj sa k nim a vyb\xFAchaj
+    \u010Do najviac chobotn\xEDc po makovici."
 --- !u!222 &602868198
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1763,12 +1763,12 @@ PrefabInstance:
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1146
+      value: 1256
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -584
+      value: -612
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
@@ -1813,12 +1813,12 @@ PrefabInstance:
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830612, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
@@ -1912,12 +1912,12 @@ PrefabInstance:
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1189
+      value: -1315
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -601
+      value: -616
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
@@ -1962,24 +1962,24 @@ PrefabInstance:
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
-    - target: {fileID: 7307897029756413637, guid: 5b2f21351b9ded6428e4c88024ec4475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1618317697}
     - target: {fileID: 7307897029756413636, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a46b80806029545b09f22e911b8ed3bc,
         type: 3}
+    - target: {fileID: 7307897029756413637, guid: 5b2f21351b9ded6428e4c88024ec4475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1618317697}
     - target: {fileID: 7307897029549379038, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.y

@@ -286,7 +286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759503779}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.85, y: 5.49, z: 0}
+  m_LocalPosition: {x: -1.9, y: 8.87, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1895887328}
@@ -391,7 +391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 650, y: 224}
+  m_AnchoredPosition: {x: 722, y: -81}
   m_SizeDelta: {x: 1366, y: 579.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834490271
@@ -451,15 +451,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 77
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Kapit\xE1n\r\nBravko Krpec\r,\nmil\xFD, kamar\xE1tsky a miestny gurm\xE1n\r.\nPresl\xE1vil
-    sa ako najmen\u0161ie, no naj\u0161ikovnej\u0161ie prasiatko spomedzi v\u0161etk\xFDch\r
-    a v okolitom vesm\xEDre nem\xE1 p\xE1ru."
+  m_Text: "Kapit\xE1n\r\nBravko Krpec\r\n\n- mil\xFD, kamar\xE1tsky a miestny gurm\xE1n\r\n-
+    presl\xE1vil sa ako najmen\u0161ie, no naj\u0161ikovnej\u0161ie prasiatko spomedzi
+    v\u0161etk\xFDch\r a v okolitom vesm\xEDre nem\xE1 p\xE1ru"
 --- !u!222 &834490274
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -873,12 +873,12 @@ PrefabInstance:
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1159
+      value: 1260
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -583
+      value: -628
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
@@ -923,12 +923,12 @@ PrefabInstance:
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830613, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830612, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}

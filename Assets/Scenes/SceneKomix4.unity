@@ -652,7 +652,7 @@ RectTransform:
   m_GameObject: {fileID: 1601481945}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children:
   - {fileID: 300825360}
   m_Father: {fileID: 1801156323}
@@ -660,7 +660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1182, y: -588}
+  m_AnchoredPosition: {x: 1295, y: -626}
   m_SizeDelta: {x: 155.6, y: 315.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1601481947
@@ -1243,7 +1243,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u010Co je\r\nnajhor\u0161ie, \u017Ee uniesli princezn\xFA."
+  m_Text: "\u010Co je\r\nnajhor\u0161ie - uniesli princezn\xFA."
 --- !u!222 &1912972908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1432,12 +1432,12 @@ PrefabInstance:
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1163
+      value: -1314
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -595
+      value: -635
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
@@ -1482,13 +1482,19 @@ PrefabInstance:
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7307897029756413638, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.25
       objectReference: {fileID: 0}
+    - target: {fileID: 7307897029756413636, guid: 5b2f21351b9ded6428e4c88024ec4475,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a46b80806029545b09f22e911b8ed3bc,
+        type: 3}
     - target: {fileID: 7307897029756413637, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1499,12 +1505,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadPrevousScene
       objectReference: {fileID: 0}
-    - target: {fileID: 7307897029756413636, guid: 5b2f21351b9ded6428e4c88024ec4475,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a46b80806029545b09f22e911b8ed3bc,
-        type: 3}
     - target: {fileID: 7307897029549379038, guid: 5b2f21351b9ded6428e4c88024ec4475,
         type: 3}
       propertyPath: m_AnchoredPosition.y
