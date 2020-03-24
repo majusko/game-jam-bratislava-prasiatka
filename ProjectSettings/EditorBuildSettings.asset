@@ -56,4 +56,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UltimateWinScene.unity
     guid: 01b98ebf67affb14697665f72dc3ce80
+  - enabled: 1
+    path: Assets/Scenes/Score.unity
+    guid: e6801f22128164bd58daf764ea9c7588
   m_configObjects: {}

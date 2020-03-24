@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-
+    public bool firstScene;
+    public bool lastScene;
     public List<GameObject> planetObjects;
     public List<GameObject> spawningPigs;
     public List<GameObject> spawningOctopus;
@@ -34,7 +35,7 @@ public class LevelManager : MonoBehaviour
 
     private float nextActionTime = 1.5f;
     private Dictionary<string, float> closedHrnce = new Dictionary<string, float>();
-    private int currentScore = 0;
+    private string currentScoreKey = "currentGlobalScore";
     private float levelWillEnd = 0;
     private float timeStarted = 0;
     private bool started = false;
@@ -47,8 +48,10 @@ public class LevelManager : MonoBehaviour
         PlayerGlobalState.Instance.levelPoints = 0;
         started = true;
 
-
-        Debug.Log(Time.timeSinceLevelLoad);
+        if(firstScene)
+        {
+            PlayerPrefs.SetInt(currentScoreKey, 0);
+        }
     }
 
     void Update()
@@ -91,11 +94,19 @@ public class LevelManager : MonoBehaviour
 
         if (PlayerGlobalState.Instance.lifes <= 0 || (Time.timeSinceLevelLoad > levelWillEnd && PlayerGlobalState.Instance.levelPoints < pointsCoTreba))
         {
+            PlayerPrefs.SetInt(currentScoreKey, PlayerPrefs.GetInt(currentScoreKey) + PlayerGlobalState.Instance.levelPoints);
             SceneManager.LoadScene(failScene);
         }
 
         if (PlayerGlobalState.Instance.lifes > 0 && Time.timeSinceLevelLoad > levelWillEnd && PlayerGlobalState.Instance.levelPoints >= pointsCoTreba)
         {
+            PlayerPrefs.SetInt(currentScoreKey, PlayerPrefs.GetInt(currentScoreKey) + PlayerGlobalState.Instance.levelPoints);
+
+            if (lastScene)
+            {
+                SaveScore();
+            }
+
             SceneManager.LoadScene(winScene);
         }
 
@@ -160,27 +171,28 @@ public class LevelManager : MonoBehaviour
     }
 
 
-    private void SaveScore(int score)
+    private void SaveScore()
     {
-        var player = new Player();
+        var score = PlayerPrefs.GetInt(currentScoreKey);
+        var leaderboard = new Leaderboard();
 
-        if(score > player.First)
+        if(score > leaderboard.First)
         {
-            player.First = score;
-        } else if(score > player.Second) {
-            player.Second = score;
+            leaderboard.First = score;
+        } else if(score > leaderboard.Second) {
+            leaderboard.Second = score;
         }
-        else if (score > player.Third)
+        else if (score > leaderboard.Third)
         {
-            player.Third = score;
+            leaderboard.Third = score;
         }
-        else if (score > player.Fourth)
+        else if (score > leaderboard.Fourth)
         {
-            player.Fourth = score;
+            leaderboard.Fourth = score;
         }
-        else if (score > player.Fifth)
+        else if (score > leaderboard.Fifth)
         {
-            player.Fifth = score;
+            leaderboard.Fifth = score;
         }
     }
 
@@ -224,8 +236,7 @@ public class LevelManager : MonoBehaviour
     }
 }
 
-
-public class Player
+public class Leaderboard
 {
     private const string first = "first";
     public int First

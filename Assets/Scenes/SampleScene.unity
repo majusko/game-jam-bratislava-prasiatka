@@ -2577,6 +2577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aae32e90e8d740e6b5ec0bffb487c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstScene: 1
+  lastScene: 0
   planetObjects:
   - {fileID: 614015139}
   - {fileID: 1594465193}

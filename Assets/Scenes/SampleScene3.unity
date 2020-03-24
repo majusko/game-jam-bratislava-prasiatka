@@ -3970,6 +3970,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aae32e90e8d740e6b5ec0bffb487c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstScene: 0
+  lastScene: 1
   planetObjects:
   - {fileID: 614015139}
   - {fileID: 1594465193}
@@ -3999,7 +4001,7 @@ MonoBehaviour:
   chanceForPig: 0.55
   waitTimeForNext: 1.3
   pointsZaChobotnica: 1
-  pointsCoTreba: 35
+  pointsCoTreba: 1
   lifes: 3
   timeForLevelInSec: 60
   score: {fileID: 1634930406}

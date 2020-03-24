@@ -1,20 +1,27 @@
 ﻿<Properties StartupConfiguration="{5B69A401-186B-DA3A-027A-7537686C200A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MusicPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LeaderboardScene.cs">
     <Files>
       <File FileName="Assets/Scripts/GreenPlanetLogic.cs" Line="26" Column="38" />
       <File FileName="Assets/Scripts/BluePlanetLogic.cs" />
       <File FileName="Assets/Scripts/HrniecLogic.cs" />
       <File FileName="Assets/Scripts/Spawner.cs" />
       <File FileName="Assets/Scripts/PlayerGlobalState.cs" />
-      <File FileName="Assets/Scripts/LevelManager.cs" Line="41" Column="1" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="96" Column="10" />
       <File FileName="Assets/Scripts/DobrePrasiatko.cs" />
       <File FileName="Assets/LiettajiicePrasiatko.cs" Line="27" Column="49" />
       <File FileName="Assets/Scripts/MusicPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LeaderboardScene.cs" Line="20" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="GameJamPrasiatka" expanded="True" />
+          <Node name="GameJamPrasiatka" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="LeaderboardScene.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
