@@ -286,7 +286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759503779}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1, y: 8.94, z: 0}
+  m_LocalPosition: {x: -4.88, y: 8.53, z: 0}
   m_LocalScale: {x: 2.2, y: 2.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1895887328}
@@ -808,7 +808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -702, y: 494}
+  m_AnchoredPosition: {x: -716, y: 417}
   m_SizeDelta: {x: 1366, y: 579.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1912972906
@@ -859,7 +859,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Skvel\xE1 pr\xE1ca!\nOslobodil si Igiho."
+  m_Text: "Si super! \nOdr\xE1\u017Ea\u0161 \xFAtok chobotn\xEDc, tvojim par\u0165\xE1kom
+    je Igi a spolu m\xE1te v\xED\u0165azstvo na dosah."
 --- !u!222 &1912972908
 CanvasRenderer:
   m_ObjectHideFlags: 0
