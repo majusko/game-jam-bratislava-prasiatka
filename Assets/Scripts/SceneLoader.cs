@@ -44,6 +44,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("SampleScene3");
     }
 
+    public void LoadScore()
+    {
+        SceneManager.LoadScene("Score");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
