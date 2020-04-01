@@ -1785,7 +1785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstScene: 0
-  lastScene: 1
+  lastScene: 0
   hasBuckets: 0
   planetObjects:
   - {fileID: 0}
@@ -1822,7 +1822,7 @@ MonoBehaviour:
   score: {fileID: 1634930406}
   timer: {fileID: 598192831}
   failScene: FailScene
-  winScene: UltimateWinScene
+  winScene: SampleScene5
   zivot1: {fileID: 1491635976}
   zivot2: {fileID: 1853069991}
   zivot3: {fileID: 1961714976}
