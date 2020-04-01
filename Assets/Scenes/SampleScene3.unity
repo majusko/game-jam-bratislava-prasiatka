@@ -3971,7 +3971,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstScene: 0
-  lastScene: 1
+  lastScene: 0
+  hasBuckets: 1
   planetObjects:
   - {fileID: 614015139}
   - {fileID: 1594465193}
@@ -4011,7 +4012,8 @@ MonoBehaviour:
   zivot1: {fileID: 1491635976}
   zivot2: {fileID: 1853069991}
   zivot3: {fileID: 1961714976}
-  flyPlaceToStart: {fileID: 1466677187}
+  flyPlaceToStart:
+  - {fileID: 1466677187}
   flyPigs:
   - {fileID: 484374485543703909, guid: 9a04ea8340d5c40b68c081f92b3021de, type: 3}
   - {fileID: 484374485543703909, guid: f35e9c6a6f88d4be7a64280f2777856e, type: 3}

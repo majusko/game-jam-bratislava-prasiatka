@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
 {
     public bool firstScene;
     public bool lastScene;
+    public bool hasBuckets;
     public List<GameObject> planetObjects;
     public List<GameObject> spawningPigs;
     public List<GameObject> spawningOctopus;
@@ -28,7 +29,7 @@ public class LevelManager : MonoBehaviour
     public GameObject zivot2;
     public GameObject zivot3;
 
-    public GameObject flyPlaceToStart;
+    public List<GameObject> flyPlaceToStart;
     public List<GameObject> flyPigs;
     public List<GameObject> flyOctopus;
     public List<GameObject> flyToPlaces;
@@ -70,6 +71,7 @@ public class LevelManager : MonoBehaviour
             }
             else
             {
+                if(hasBuckets)
                 SpawnSomething();
             }
 
@@ -151,7 +153,7 @@ public class LevelManager : MonoBehaviour
             spawningObject = flyOctopus[Random.Range(0, flyOctopus.Count)];
         }
 
-        GameObject intantiated = Instantiate(spawningObject, flyPlaceToStart.transform.position, Quaternion.identity);
+        GameObject intantiated = Instantiate(spawningObject, flyPlaceToStart[Random.Range(0, flyPlaceToStart.Count)].transform.position, Quaternion.identity);
 
     }
 
@@ -171,7 +173,7 @@ public class LevelManager : MonoBehaviour
     }
 
 
-    private void SaveScore()
+    public void SaveScore()
     {
         var score = PlayerPrefs.GetInt(currentScoreKey);
         var leaderboard = new Leaderboard();

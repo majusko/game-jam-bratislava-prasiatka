@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/SceneKomix2.unity
-=======
-- path: Assets/Scenes/FailScene.unity
->>>>>>> 88609ffcc5b9b4cc0f971f5ed3d18b5b08d3ec07
+- path: Assets/Scenes/SampleScene4.unity
   isLoaded: 1
   isActive: 1
