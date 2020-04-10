@@ -9,9 +9,18 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadNextScene()
     {
+        StartCoroutine("WaitAndLoadNextScene");        
+    }
+
+
+    IEnumerator WaitAndLoadNextScene()
+    {
+        yield return new WaitForSeconds(3);
+
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
+
     public void LoadPrevousScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

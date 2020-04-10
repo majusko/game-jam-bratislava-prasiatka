@@ -20,6 +20,7 @@ public class RaketaLogic : MonoBehaviour
 
     private int aktualneScore = 0;
     private string currentScoreKey = "currentGlobalScore";
+    private string lastScoreKey = "lastGlobalScore";
     public LevelManager levelManager;
 
 
@@ -50,6 +51,7 @@ public class RaketaLogic : MonoBehaviour
             if (aktualneScore >= pointsCoTreba)
             {
                 PlayerPrefs.SetInt(currentScoreKey, PlayerPrefs.GetInt(currentScoreKey) + PlayerGlobalState.Instance.levelPoints);
+                PlayerPrefs.SetInt(lastScoreKey, PlayerGlobalState.Instance.levelPoints);
                 if (lastScene)
                 {
                     levelManager.SaveScore();
