@@ -36,23 +36,44 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneKomix10.unity
     guid: 11178cd2e42a82841839dd4ffd132cf8
   - enabled: 1
-    path: Assets/Scenes/SampleScene2.unity
-    guid: d985edac10cdb451eb13ee4993233a94
-  - enabled: 1
-    path: Assets/Scenes/FailScene.unity
-    guid: a104d6321c1909f49b1bef145837c61a
+    path: Assets/Scenes/SampleScene.unity
+    guid: 507af6431cc734350a099ea0a46dc919
   - enabled: 1
     path: Assets/Scenes/WinScene1.unity
     guid: 94bda98ad775d0148aad99a26989008b
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 507af6431cc734350a099ea0a46dc919
+    path: Assets/Scenes/SampleScene2.unity
+    guid: d985edac10cdb451eb13ee4993233a94
+  - enabled: 1
+    path: Assets/Scenes/WinScene2.unity
+    guid: 128c811aa7cc3fb488bf98434f55ce97
+  - enabled: 1
+    path: Assets/Scenes/FailScene.unity
+    guid: a104d6321c1909f49b1bef145837c61a
   - enabled: 1
     path: Assets/Scenes/SampleScene3.unity
     guid: 532a2d48130fd48d8ae3dfc33e0d213c
   - enabled: 1
-    path: Assets/Scenes/WinScene2.unity
-    guid: 128c811aa7cc3fb488bf98434f55ce97
+    path: Assets/Scenes/WinScene3.unity
+    guid: bad30ae36c7f70e4e97f3f00818c2944
+  - enabled: 1
+    path: Assets/Scenes/SampleScene4.unity
+    guid: c42483c5056d6e845b0454b6cf7dc0f3
+  - enabled: 1
+    path: Assets/Scenes/WinScene6.unity
+    guid: 0aaf09269024e31469a5f06516905878
+  - enabled: 1
+    path: Assets/Scenes/WinScene4.unity
+    guid: 0b8eb27ca90bc6044bc27712d69d785b
+  - enabled: 1
+    path: Assets/Scenes/WinScene5.unity
+    guid: 3021ce71d17f4e34da430d4bac5b2d78
+  - enabled: 1
+    path: Assets/Scenes/SampleScene6.unity
+    guid: 30aa884fd8a1ded46b7e659ae590789d
+  - enabled: 1
+    path: Assets/Scenes/SampleScene5.unity
+    guid: 7453553e2bf8c314aaa5fe337cb9a19b
   - enabled: 1
     path: Assets/Scenes/UltimateWinScene.unity
     guid: 01b98ebf67affb14697665f72dc3ce80

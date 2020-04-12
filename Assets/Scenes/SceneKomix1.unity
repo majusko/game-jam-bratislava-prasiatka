@@ -304,27 +304,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8300000, guid: 44eb24e91e5f79b45a6500ff1686ea39, type: 3}
+      objectReference: {fileID: 1618317697}
     - target: {fileID: 2674785157980830612, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: LoadNextScene
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830612, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: 11e3c00032933904081aae1c534b6404,
-        type: 3}
+      objectReference: {fileID: 1618317697}
     - target: {fileID: 2674785157980830612, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: 
+      value: LoadNextScene
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830612, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2674785157980830612, guid: a87ca76537cf76d48bc387b7974558eb,
         type: 3}

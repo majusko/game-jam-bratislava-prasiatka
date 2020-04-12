@@ -5,18 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-   
 
-    public void LoadNextScene()
+    private string checkPointKey = "checkPointKey";
+
+    private void Start()
     {
-        StartCoroutine("WaitAndLoadNextScene");        
+        if(SceneManager.GetActiveScene().name == "SceneKomix1")
+        {
+            PlayerPrefs.SetString(checkPointKey, "SceneKomix1");
+        }
     }
 
 
-    IEnumerator WaitAndLoadNextScene()
+    public void LoadNextScene()
     {
-        yield return new WaitForSeconds(3);
-
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
@@ -34,9 +36,12 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadStartScene()
     {
-        SceneManager.LoadScene("SceneKomix1");
+        SceneManager.LoadScene("SceneKomix1");             
     }
-
+    public void LoadLastCheckPointScene()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetString(checkPointKey));
+    }
 
     public void LoadLevelOne()
     {
@@ -52,7 +57,23 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene3");
     }
+    public void LoadLevelFor()
+    {
+        SceneManager.LoadScene("SampleScene4");
+    }
+    public void LoadLevelFive()
+    {
+        SceneManager.LoadScene("SampleScene5");
+    }
+    public void LoadLevelSix()
+    {
+        SceneManager.LoadScene("SampleScene6");
+    }
 
+    public void LoadWinScene4()
+    {
+        SceneManager.LoadScene("WinScene4");
+    }
     public void LoadScore()
     {
         SceneManager.LoadScene("Score");

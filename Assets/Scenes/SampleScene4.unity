@@ -1309,14 +1309,17 @@ MonoBehaviour:
   explotion: {fileID: 3885081394501623046, guid: 129bda14e07dca341a37bc59d220f5d5,
     type: 3}
   zachraneni: {fileID: 570334489}
+  stitText: {fileID: 0}
   zasahSound: {fileID: 8300000, guid: 36ce42b347634fc4dbd52069de0e59cc, type: 3}
   zasahSoundVolume: 0.25
   zaschraneniSound: {fileID: 8300000, guid: 9151d8d893fa7394caa93cee329b9b18, type: 3}
   zachraneniSoundVolume: 0.25
-  pointsCoTreba: 10
+  pointsCoTreba: 15
+  pocetStitov: 3
   failScene: FailScene
-  winScene: UltimateWinScene
+  winScene: WinScene5
   lastScene: 0
+  newSprite: {fileID: 21300000, guid: 07022997e947e194cb5a247e74ea7412, type: 3}
   levelManager: {fileID: 1633985844}
 --- !u!70 &1052432137
 CapsuleCollider2D:
@@ -1822,7 +1825,7 @@ MonoBehaviour:
   score: {fileID: 1634930406}
   timer: {fileID: 598192831}
   failScene: FailScene
-  winScene: SampleScene5
+  winScene: WinScene5
   zivot1: {fileID: 1491635976}
   zivot2: {fileID: 1853069991}
   zivot3: {fileID: 1961714976}

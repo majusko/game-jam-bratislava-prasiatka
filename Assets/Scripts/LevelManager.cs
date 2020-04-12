@@ -37,12 +37,14 @@ public class LevelManager : MonoBehaviour
     private float nextActionTime = 1.5f;
     private Dictionary<string, float> closedHrnce = new Dictionary<string, float>();
     private string currentScoreKey = "currentGlobalScore";
+    private string checkPointKey = "checkPointKey";
     private float levelWillEnd = 0;
     private float timeStarted = 0;
     private bool started = false;
 
     void Start()
     {
+        Debug.Log("SCENE N : " + SceneManager.GetActiveScene().name);
         timeStarted = Time.timeSinceLevelLoad;
         levelWillEnd = Time.timeSinceLevelLoad + timeForLevelInSec;
         PlayerGlobalState.Instance.lifes = lifes;
@@ -107,8 +109,12 @@ public class LevelManager : MonoBehaviour
             if (lastScene)
             {
                 SaveScore();
+            }          
+            if (SceneManager.GetActiveScene().name == "SampleScene3")
+            {
+                PlayerPrefs.SetString(checkPointKey, "WinScene3");
             }
-
+            
             SceneManager.LoadScene(winScene);
         }
 

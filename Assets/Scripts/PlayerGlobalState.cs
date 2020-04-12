@@ -6,7 +6,7 @@ public class PlayerGlobalState : MonoBehaviour
 {
 
     public int lifes;
-    public int levelPoints;
+    public int levelPoints;    
 
     private static PlayerGlobalState _instance;
 
