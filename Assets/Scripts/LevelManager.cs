@@ -43,8 +43,7 @@ public class LevelManager : MonoBehaviour
     private bool started = false;
 
     void Start()
-    {
-        Debug.Log("SCENE N : " + SceneManager.GetActiveScene().name);
+    {       
         timeStarted = Time.timeSinceLevelLoad;
         levelWillEnd = Time.timeSinceLevelLoad + timeForLevelInSec;
         PlayerGlobalState.Instance.lifes = lifes;
@@ -181,7 +180,7 @@ public class LevelManager : MonoBehaviour
 
     public void SaveScore()
     {
-        var score = PlayerPrefs.GetInt(currentScoreKey);
+        var score = PlayerPrefs.GetInt(currentScoreKey);        
         var leaderboard = new Leaderboard();
 
         if(score > leaderboard.First)

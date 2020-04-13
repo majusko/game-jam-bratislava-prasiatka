@@ -27,8 +27,7 @@ public class RaketaLogic : MonoBehaviour
 
     private void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
-        PlayerPrefs.SetInt(currentScoreKey, 0);
+        sr = GetComponent<SpriteRenderer>();       
      
          zachraneni.text = PlayerGlobalState.Instance.levelPoints + "/" + pointsCoTreba;
         if (SceneManager.GetActiveScene().name == "SampleScene4")
@@ -84,9 +83,11 @@ public class RaketaLogic : MonoBehaviour
             AudioSource.PlayClipAtPoint(zaschraneniSound, Camera.main.transform.position, zachraneniSoundVolume);
             zachraneni.text = aktualneScore + "/" + pointsCoTreba;           
             if (aktualneScore >= pointsCoTreba)
-            {
+            {             
+              
 
                 PlayerPrefs.SetInt(currentScoreKey, PlayerPrefs.GetInt(currentScoreKey) + PlayerGlobalState.Instance.levelPoints);
+               
                 if (lastScene)
                 {
                     levelManager.SaveScore();

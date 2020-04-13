@@ -1320,7 +1320,7 @@ MonoBehaviour:
   pocetStitov: 5
   failScene: FailScene
   winScene: UltimateWinScene
-  lastScene: 0
+  lastScene: 1
   newSprite: {fileID: 21300000, guid: 07022997e947e194cb5a247e74ea7412, type: 3}
   levelManager: {fileID: 1633985844}
 --- !u!70 &1052432137
@@ -2176,7 +2176,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifes: 3
   levelPoints: 0
-  lastCheckPoint: SceneKomix1
 --- !u!1 &1740887299
 GameObject:
   m_ObjectHideFlags: 0

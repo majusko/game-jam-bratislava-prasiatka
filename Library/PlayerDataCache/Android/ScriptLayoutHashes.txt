@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/pejo/Desktop/screens/test83.apk
+C:/Users/pejo/Desktop/screens/test11.apk
 SceneListBegin?
 Assets/Scenes/SceneKomix1.unity
 Assets/Scenes/SceneKomix2.unity
